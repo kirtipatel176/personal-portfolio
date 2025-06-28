@@ -16,10 +16,10 @@ export default function TechStack({ darkMode }: TechStackProps) {
       description: "Building beautiful user interfaces",
       technologies: [
         { name: "React", level: 95, icon: "⚛️" },
-        { name: "Next.js", level: 90, icon: "▲" },
-        { name: "TypeScript", level: 88, icon: "📘" },
-        { name: "Tailwind CSS", level: 92, icon: "🎨" },
-        { name: "Vue.js", level: 80, icon: "💚" },
+        { name: "Next.js", level: 80, icon: "▲" },
+        { name: "TypeScript", level: 75, icon: "📘" },
+        { name: "Tailwind CSS", level: 85, icon: "🎨" },
+        
       ],
     },
     {
@@ -30,9 +30,9 @@ export default function TechStack({ darkMode }: TechStackProps) {
       technologies: [
         { name: "Node.js", level: 90, icon: "🟢" },
         { name: "Express.js", level: 85, icon: "🚀" },
-        { name: "Python", level: 82, icon: "🐍" },
-        { name: "Django", level: 78, icon: "🎯" },
-        { name: "GraphQL", level: 75, icon: "📊" },
+        { name: "Python", level: 80, icon: "🐍" },
+        { name: "Django", level: 70, icon: "🎯" },
+        { name: "GraphQL", level: 70, icon: "📊" },
       ],
     },
     {
@@ -41,11 +41,10 @@ export default function TechStack({ darkMode }: TechStackProps) {
       color: "from-purple-400 to-pink-400",
       description: "Data storage and management",
       technologies: [
-        { name: "MongoDB", level: 88, icon: "🍃" },
+        { name: "MongoDB", level: 90, icon: "🍃" },
         { name: "PostgreSQL", level: 85, icon: "🐘" },
-        { name: "MySQL", level: 80, icon: "🐬" },
-        { name: "Redis", level: 75, icon: "🔴" },
-        { name: "Firebase", level: 82, icon: "🔥" },
+        { name: "MySQL", level: 90, icon: "🐬" },
+        { name: "Firebase", level: 75, icon: "🔥" },
       ],
     },
     {
@@ -54,39 +53,13 @@ export default function TechStack({ darkMode }: TechStackProps) {
       color: "from-orange-400 to-red-400",
       description: "Deployment and infrastructure",
       technologies: [
-        { name: "AWS", level: 80, icon: "☁️" },
         { name: "Docker", level: 78, icon: "🐳" },
-        { name: "Vercel", level: 90, icon: "▲" },
-        { name: "Netlify", level: 85, icon: "🌐" },
+        { name: "Vercel", level: 80, icon: "▲" },
         { name: "GitHub Actions", level: 75, icon: "⚡" },
       ],
     },
-    {
-      title: "Design & Animation",
-      icon: Palette,
-      color: "from-pink-400 to-rose-400",
-      description: "Creative design and motion",
-      technologies: [
-        { name: "Figma", level: 85, icon: "🎨" },
-        { name: "Adobe XD", level: 80, icon: "🔷" },
-        { name: "Framer Motion", level: 88, icon: "🎭" },
-        { name: "GSAP", level: 75, icon: "⚡" },
-        { name: "Three.js", level: 70, icon: "🎲" },
-      ],
-    },
-    {
-      title: "Mobile & Web",
-      icon: Smartphone,
-      color: "from-indigo-400 to-purple-400",
-      description: "Cross-platform development",
-      technologies: [
-        { name: "React Native", level: 82, icon: "📱" },
-        { name: "Flutter", level: 75, icon: "🦋" },
-        { name: "PWA", level: 85, icon: "📲" },
-        { name: "Electron", level: 70, icon: "⚡" },
-        { name: "Ionic", level: 70, icon: "⚡" },
-      ],
-    },
+   
+    
   ]
 
   const containerVariants = {

@@ -314,8 +314,8 @@ export default function TechStack({ darkMode }: TechStackProps) {
             <div className="flex flex-wrap justify-center gap-4">
               {[
                 { name: "AI/ML", icon: "🤖", color: "from-cyan-400 to-blue-500" },
-                { name: "Web3", icon: "🌐", color: "from-purple-400 to-pink-500" },
-                { name: "Rust", icon: "🦀", color: "from-orange-400 to-red-500" },
+                { name: "Python", icon: "🌐", color: "from-purple-400 to-pink-500" },
+                { name: "React", icon: "☸️", color: "from-orange-400 to-red-500" },
                 { name: "Kubernetes", icon: "☸️", color: "from-blue-400 to-indigo-500" },
               ].map((item, index) => (
                 <motion.div

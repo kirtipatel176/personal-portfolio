@@ -15,40 +15,40 @@ export default function Projects({ darkMode }: ProjectsProps) {
 
   const projects = [
     {
-      id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and MongoDB",
-      longDescription:
-        "A comprehensive e-commerce platform featuring user authentication, product catalog, shopping cart, payment integration, and admin dashboard. Built with modern technologies and best practices for scalability and performance.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
-      github: "#",
-      live: "#",
-      featured: true,
+        id: 1,
+        title: "Department of Justice AI Chatbot",
+        description: "An AI-powered legal assistant built using React, Python, and LangChain.",
+        longDescription:
+        "This chatbot assists users with legal queries by leveraging natural language understanding and real-time data retrieval. Built with React for the frontend and Python with LangChain for AI-driven response generation, the system integrates intelligent search, user-friendly interfaces, and domain-specific context handling to provide quick and accurate legal information.",
+        image: "/dojchatbot.jpeg?height=400&width=600",
+        tags: ["React", "Python", "LangChain", "AI", "Tailwind CSS"],
+        github: "https://github.com/kirtipatel176/DOJ_CHATBOT.git",
+        live: "#",
+        featured: true,
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "A collaborative task management tool with real-time updates",
+      title: "QR-Based Ordering System",
+      description: "A smart restaurant solution for contactless menu browsing and ordering.",
       longDescription:
-        "A real-time collaborative task management application with drag-and-drop functionality, team collaboration features, and progress tracking. Includes notifications, file attachments, and detailed analytics.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["React", "Socket.io", "Express", "PostgreSQL"],
-      github: "#",
+        "A digital ordering system where customers scan a QR code to view the menu, place orders, and make payments—eliminating the need for physical menus or waitstaff. Features include real-time order tracking, admin dashboard, and seamless user experience for both customers and staff.",
+      image: "/qrbase.jpeg?height=400&width=600",
+      tags: ["React", "Node.js", "Express", "MongoDB", "QR Code","TypeScript"],
+      github: "https://github.com/kirtipatel176/Qr-based-ordering-system.git",
       live: "#",
       featured: true,
     },
     {
-      id: 3,
-      title: "Weather Dashboard",
-      description: "A beautiful weather app with location-based forecasts",
-      longDescription:
-        "An elegant weather dashboard that provides detailed weather information, forecasts, and interactive maps. Features location-based weather, historical data, and customizable widgets.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["React", "Weather API", "Chart.js", "CSS3"],
-      github: "#",
-      live: "#",
-      featured: false,
+        id: 3,
+        title: "Expense Tracker",
+        description: "A simple and effective tool to manage daily expenses.",
+        longDescription:
+          "A personal finance tracking application built using PHP that allows users to log their income and expenses, categorize transactions, and visualize spending habits. Includes user authentication, monthly reports, and budget management features.",
+        image: "/expensetracker.jpeg?height=400&width=600",
+        tags: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
+        github: "https://github.com/kirtipatel176/Expense_Tracker.git",
+        live: "#",
+        featured: false,
     },
     {
       id: 4,
@@ -56,7 +56,7 @@ export default function Projects({ darkMode }: ProjectsProps) {
       description: "A responsive portfolio website with modern animations",
       longDescription:
         "A modern, responsive portfolio website showcasing projects and skills with smooth animations, dark/light mode toggle, and optimized performance. Built with attention to detail and user experience.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/personalportfolio.png?height=400&width=600",
       tags: ["Next.js", "Framer Motion", "Tailwind CSS"],
       github: "#",
       live: "#",
@@ -64,28 +64,17 @@ export default function Projects({ darkMode }: ProjectsProps) {
     },
     {
       id: 5,
-      title: "Social Media Dashboard",
-      description: "Analytics dashboard for social media management",
+      title: "AI Crowd Management System",
+      description: "A research-based AI system for real-time crowd analysis and response.",
       longDescription:
-        "A comprehensive social media analytics dashboard with real-time data visualization, post scheduling, engagement tracking, and performance metrics across multiple platforms.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["Vue.js", "D3.js", "Firebase", "Social APIs"],
-      github: "#",
+        "A research-driven AI solution that leverages computer vision and language models to monitor, analyze, and manage crowds in real time. Built with React for the user interface and Python with LangChain for backend intelligence and automation, this system aims to enhance public safety through proactive crowd control strategies.",
+      image: "/crowd.jpeg?height=400&width=600",
+      tags: ["React", "Python", "LangChain", "AI", "Research"],
+      github: "https://github.com/kirtipatel176/Crowd_Management_system.git",
       live: "#",
       featured: true,
     },
-    {
-      id: 6,
-      title: "Learning Management System",
-      description: "Educational platform with course management and progress tracking",
-      longDescription:
-        "A complete learning management system with course creation, student enrollment, progress tracking, quizzes, and certification. Includes video streaming, discussion forums, and mobile responsiveness.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["React", "Node.js", "MySQL", "AWS"],
-      github: "#",
-      live: "#",
-      featured: false,
-    },
+    
   ]
 
   const featuredProjects = projects.filter((p) => p.featured)
@@ -115,7 +104,7 @@ export default function Projects({ darkMode }: ProjectsProps) {
           className="text-center mb-16"
         >
           <h2 className={`text-4xl md:text-5xl font-bold mb-6 ${darkMode ? "text-white" : "text-slate-900"}`}>
-            Featured{" "}
+            Work on{" "}
             <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Projects</span>
           </h2>
           <p className={`text-lg max-w-3xl mx-auto ${darkMode ? "text-slate-300" : "text-slate-600"}`}>
@@ -318,10 +307,12 @@ export default function Projects({ darkMode }: ProjectsProps) {
                           <ExternalLink className="mr-2 h-4 w-4" />
                           Live Demo
                         </Button>
+                        <a href={project.github} target="_blank" rel="noopener noreferrer">
                         <Button variant="outline">
                           <Github className="mr-2 h-4 w-4" />
                           View Code
                         </Button>
+                      </a>
                       </div>
                     </div>
                   </>

@@ -171,6 +171,7 @@ export default function Hero({ darkMode }: HeroProps) {
             >
               <Download className="mr-2 h-4 w-4" />
               Download CV
+              
             </Button>
           </motion.div>
 
@@ -202,14 +203,7 @@ export default function Hero({ darkMode }: HeroProps) {
         {/* Profile Image */}
         <motion.div variants={itemVariants} className="relative">
           <motion.div
-            animate={{
-              rotate: [0, 5, -5, 0],
-            }}
-            transition={{
-              duration: 10,
-              repeat: Number.POSITIVE_INFINITY,
-              ease: "easeInOut",
-            }}
+            
             className="relative mx-auto w-80 h-80 lg:w-96 lg:h-96"
           >
             {/* Glassmorphism Background */}
@@ -227,12 +221,14 @@ export default function Hero({ darkMode }: HeroProps) {
                 } flex items-center justify-center`}
               >
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
-                  alt="Kirti Patel"
-                  width={300}
-                  height={300}
-                  className="rounded-full object-cover"
-                />
+                src="./Kirti.JPG?height=300&width=300"
+                alt="Kirti Patel"
+                width={300}
+                height={300}
+                className="rounded-full object-cover"
+              />
+               
+
               </div>
             </div>
 

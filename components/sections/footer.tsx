@@ -26,7 +26,7 @@ export default function Footer({ darkMode }: FooterProps) {
           <div className="text-center md:text-left">
             <p className={`text-lg font-semibold mb-2 ${darkMode ? "text-white" : "text-slate-900"}`}>Kirti Patel</p>
             <p className={`flex items-center gap-2 ${darkMode ? "text-slate-400" : "text-slate-600"}`}>
-              Made with <Heart className="h-4 w-4 text-red-500 fill-current" /> using React & Next.js
+              
             </p>
           </div>
 

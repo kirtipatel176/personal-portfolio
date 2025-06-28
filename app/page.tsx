@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button"
 import Navigation from "@/components/sections/navigation"
 
 export default function Portfolio() {
-  const [darkMode, setDarkMode] = useState(true)
+  const [darkMode, setDarkMode] = useState(false)
 
   useEffect(() => {
     if (darkMode) {

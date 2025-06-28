@@ -147,8 +147,7 @@ export default function Hero({ darkMode }: HeroProps) {
             variants={itemVariants}
             className={`text-lg mb-8 max-w-lg ${darkMode ? "text-slate-400" : "text-slate-600"}`}
           >
-            Passionate about creating beautiful, functional, and user-centered digital experiences. I bring ideas to
-            life through code and design.
+           I specialize in building modern, responsive, and high-performance web applications using technologies like React, Node.js, TypeScript, and MongoDB. I love solving real-world problems with clean code, creative thinking, and impactful design.
           </motion.p>
 
           <motion.div variants={itemVariants} className="flex flex-wrap gap-4 justify-center lg:justify-start mb-8">
@@ -177,8 +176,8 @@ export default function Hero({ darkMode }: HeroProps) {
 
           <motion.div variants={itemVariants} className="flex gap-4 justify-center lg:justify-start">
             {[
-              { icon: Github, href: "https://github.com", label: "GitHub" },
-              { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+              { icon: Github, href: "https://github.com/kirtipatel176/", label: "GitHub" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/kirtipatel215/", label: "LinkedIn" },
               { icon: Mail, href: "mailto:kirteekumarmukeshbhaipatel@gmail.com", label: "Email" },
             ].map(({ icon: Icon, href, label }) => (
               <motion.a

@@ -10,25 +10,26 @@ interface AboutProps {
 export default function About({ darkMode }: AboutProps) {
   const experiences = [
     {
-      year: "2023 - Present",
-      title: "Senior Full Stack Developer",
-      company: "TechCorp Solutions",
-      description: "Leading development of scalable web applications using React, Node.js, and cloud technologies.",
+      year: "May 2025 - June 2025",
+      title: "Full stack web Developer Intern",
+      company: "infoxoras",
+      description: "Worked on real-life web development projects and explored advanced technologies, gaining hands-on experience in applying practical solutions",
+      icon: Code
+    },
+
+    {
+      year: "May-2024 - June-2024",
+      title: "Full Stack Web Development Intern",
+      company: "infoxoras",
+      description: "Interned as a web developer, built responsive web applications, improved user experience, and explored new technologies alongside academic learning.",
       icon: Code,
     },
     {
-      year: "2021 - 2023",
-      title: "Frontend Developer",
-      company: "Digital Innovations",
-      description: "Developed responsive web applications and improved user experience across multiple platforms.",
-      icon: Palette,
-    },
-    {
-      year: "2020 - 2021",
-      title: "Junior Developer",
-      company: "StartupHub",
-      description: "Built and maintained web applications while learning modern development practices.",
-      icon: Zap,
+      year: "2023 - Present",
+      title: "B.Sc. in Information Technology",
+      company: "Charotar University of Science and Technology (CHARUSAT)",
+      description: "Currently pursuing my degree while actively learning new technologies and exploring innovative ideas in web development.",
+      icon: Code
     },
   ]
 
@@ -102,8 +103,7 @@ export default function About({ darkMode }: AboutProps) {
             About <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Me</span>
           </h2>
           <p className={`text-lg max-w-3xl mx-auto ${darkMode ? "text-slate-300" : "text-slate-600"}`}>
-            I'm a passionate full-stack developer with over 3 years of experience creating digital solutions that make a
-            difference. I love turning complex problems into simple, beautiful designs.
+            I’m a passionate full-stack developer eager to start my professional journey. I enjoy turning complex problems into simple, user-friendly digital solutions and have a strong foundation in building full-stack web applications.
           </p>
         </motion.div>
 
@@ -128,7 +128,7 @@ export default function About({ darkMode }: AboutProps) {
             <motion.div variants={itemVariants} className="space-y-4 mb-6">
               <div className="flex items-center gap-3">
                 <MapPin className={`h-5 w-5 ${darkMode ? "text-purple-400" : "text-purple-600"}`} />
-                <span className={darkMode ? "text-slate-300" : "text-slate-600"}>Mumbai, India</span>
+                <span className={darkMode ? "text-slate-300" : "text-slate-600"}>Kapadwanj, Gujarat</span>
               </div>
               <div className="flex items-center gap-3">
                 <Calendar className={`h-5 w-5 ${darkMode ? "text-purple-400" : "text-purple-600"}`} />
@@ -140,9 +140,7 @@ export default function About({ darkMode }: AboutProps) {
               variants={itemVariants}
               className={`${darkMode ? "text-slate-400" : "text-slate-600"} leading-relaxed`}
             >
-              When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or
-              enjoying a good cup of coffee while sketching out new ideas. I believe in continuous learning and staying
-              updated with the latest trends in web development.
+            I’m a coder at heart who enjoys exploring new technologies, experimenting with innovative project ideas, and contributing to open-source communities. When I’m not coding, you’ll find me sketching out creative solutions and bringing ideas to life through code. As a full-stack web development enthusiast, I believe in continuous learning and staying updated with the latest trends in tech.
             </motion.p>
           </motion.div>
 

@@ -12,7 +12,7 @@ interface HeroProps {
 
 export default function Hero({ darkMode }: HeroProps) {
   const [text, setText] = useState("")
-  const fullText = "Full Stack Developer & UI/UX Enthusiast"
+  const fullText = "Full Stack Developer "
 
   useEffect(() => {
     let index = 0
@@ -55,7 +55,24 @@ export default function Hero({ darkMode }: HeroProps) {
         ease: [0.25, 0.4, 0.25, 1],
       },
     },
+
+
   }
+
+  const downloadCSV = () => {
+  const csvContent = `Name,Role,Description,Recent Project,Contact
+Kirti Patel,Full Stack Developer,"I specialize in building modern, responsive, and high-performance web applications using React, Node.js, TypeScript, and MongoDB.","Department of Justice AI Chatbot (React + LangChain + Gemini)","kirteekumarmukeshbhaipatel@gmail.com | +91 63540 90086"`
+
+  const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" })
+  const url = URL.createObjectURL(blob)
+  const link = document.createElement("a")
+  link.setAttribute("href", url)
+  link.setAttribute("download", "kirti-portfolio.csv")
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+}
+
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
@@ -160,19 +177,20 @@ export default function Hero({ darkMode }: HeroProps) {
               Get In Touch
             </Button>
 
-            <Button
-              variant="outline"
-              size="lg"
-              className={`${
-                darkMode
-                  ? "border-white/20 text-white hover:bg-white/10"
-                  : "border-slate-300 text-slate-700 hover:bg-slate-100"
-              } backdrop-blur-sm`}
-            >
-              <Download className="mr-2 h-4 w-4" />
-              Download CV
-              
-            </Button>
+           <Button
+            onClick={downloadCSV}
+            variant="outline"
+            size="lg"
+            className={`${
+              darkMode
+                ? "border-white/20 text-white hover:bg-white/10"
+                : "border-slate-300 text-slate-700 hover:bg-slate-100"
+            } backdrop-blur-sm`}
+          >
+  <Download className="mr-2 h-4 w-4" />
+  Download CSV
+</Button>
+
           </motion.div>
 
           <motion.div variants={itemVariants} className="flex gap-4 justify-center lg:justify-start">

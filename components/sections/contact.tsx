@@ -81,13 +81,13 @@ export default function Contact({ darkMode }: ContactProps) {
     {
       icon: Phone,
       label: "Phone",
-      value: "+91 98765 43210",
-      href: "tel:+919876543210",
+      value: "+91 63540 90086",
+      href: "tel:+91 9426273987",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Mumbai, India",
+      value: "kapadwanj, Gujarat",
       href: "#",
     },
   ]
@@ -96,13 +96,13 @@ export default function Contact({ darkMode }: ContactProps) {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com",
+      href: "https://github.com/kirtipatel176",
       color: "hover:text-gray-400",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/kirtipatel215/",
       color: "hover:text-blue-400",
     },
     {

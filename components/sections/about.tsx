@@ -9,6 +9,13 @@ interface AboutProps {
 
 export default function About({ darkMode }: AboutProps) {
   const experiences = [
+     {
+      year: "2025",
+      title: "Full stack web Developer ",
+      company: "Fresher(Searching for Job)",
+      description: "I’m a passionate full-stack web developer actively seeking opportunities to join a dynamic team where I can apply my skills, learn from real-world projects, and grow as a developer.",
+      icon: Code
+    },
     {
       year: "May 2025 - June 2025",
       title: "Full stack web Developer Intern",
@@ -36,9 +43,8 @@ export default function About({ darkMode }: AboutProps) {
   const skills = [
     { name: "Frontend Development", level: 95 },
     { name: "Backend Development", level: 88 },
-    { name: "UI/UX Design", level: 82 },
     { name: "Database Management", level: 85 },
-    { name: "DevOps & Cloud", level: 78 },
+    { name: "DevOps & Cloud", level: 75 },
   ]
 
   const containerVariants = {
